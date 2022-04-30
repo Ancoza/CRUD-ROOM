@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/popbackground"
     tools:context=".MenuFragment">
 
     <RelativeLayout
@@ -10,13 +12,14 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Menu"
-            android:textStyle="bold"
+            android:text="Películas"
             android:textAlignment="center"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnAddGenero"
@@ -24,10 +27,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="238dp"
+            android:layout_marginTop="338dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="20dp"
-            android:text="Agregar Genero" />
+            android:backgroundTint="@color/material_dynamic_neutral40"
+            android:text="Agregar Género" />
 
         <Button
             android:id="@+id/btnAddClasificacion"
@@ -35,10 +39,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="171dp"
+            android:layout_marginTop="271dp"
             android:layout_marginEnd="-4dp"
             android:layout_marginBottom="20dp"
-            android:text="Agregar Clasificacion" />
+            android:backgroundTint="@color/material_dynamic_neutral40"
+            android:text="Agregar Clasificación" />
 
         <Button
             android:id="@+id/btnViewClasificacion"
@@ -47,7 +52,8 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="289dp"
+            android:layout_marginBottom="189dp"
+            android:backgroundTint="@color/material_dynamic_neutral40"
             android:text="Ver Clasificacion" />
 
         <Button
@@ -55,8 +61,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="350dp"
-            android:text="Ver Generos" />
+            android:layout_marginBottom="250dp"
+            android:backgroundTint="@color/material_dynamic_neutral40"
+            android:text="Ver Géneros" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="512px"
+            android:layout_height="512px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:src="@drawable/palomitas_de_maiz" />
 
 
     </RelativeLayout>
